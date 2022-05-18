@@ -30,7 +30,9 @@ pipeline {
       }
     }
      stage('QA Team certification') {
-          input "Deploy to QA?"
+       steps {
+           input "Deploy to QA?"
+       }
       }
     stage('Delete Project') {
       steps {
